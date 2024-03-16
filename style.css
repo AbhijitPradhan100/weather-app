@@ -1,0 +1,101 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html,body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+    cursor: help;
+    background-image: url("25501.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.weather-container{
+    color: white;
+}
+
+.temperature{
+    font-size: 10rem;
+}
+
+.time-location{
+    font-size: 2rem;
+    border: 5px white ridge;
+}
+
+.condition{
+    font-size: 2rem;
+}
+
+nav{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+/* .navigation{
+    margin: 20px;
+} */
+
+.search-area{
+    padding: 8px 12px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.search-area:focus{
+    border-color: dodgerblue;
+}
+
+.navigation button[type=submit]{
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navigation button[type=submit]:hover{
+    background-color: #4CAF50;
+}
+.credit{
+    height: 30px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .temperature {
+        font-size: 6rem;
+    }
+    .time-location {
+        font-size: 1.5rem;
+    }
+    .condition {
+        font-size: 1.5rem;
+    }
+}
